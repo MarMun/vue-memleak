@@ -4,6 +4,7 @@
     <router-link to="/caseone">Case 1</router-link> |
     <router-link to="/casetwo">Case 2</router-link> |
     <router-link to="/casethree">Case 3 (mem leak)</router-link>
+    <router-link to="/casefour">Case 4 (mem leak)</router-link>
   </div>
   <router-view/>
 </template>

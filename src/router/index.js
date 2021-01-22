@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import CaseOne from '../views/case.one.vue'
 import CaseTwo from '../views/case.two.vue'
 import CaseThree from '../views/case.three.vue'
+import CaseFour from '../views/case.four.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/casethree',
     name: 'CaseThree',
     component: CaseThree
+  },
+  {
+    path: '/casefour',
+    name: 'CaseFour',
+    component: CaseFour
   }
 ]
 

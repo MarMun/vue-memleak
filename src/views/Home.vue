@@ -12,6 +12,9 @@
     <p>Single root + multiple childs causing mem leak (?)</p>
     <p><strong>But only on first visit?</strong></p>
 
+    <h1>Case 4</h1>
+    <p>Add to baseline</p>
+
   </div>
 </template>
 
