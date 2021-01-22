@@ -12,9 +12,16 @@
 <script>
 export default {
   name: 'FooBarList',
+  props: {
+    itemCount: {
+      type: Number,
+      default: () => { return 100 },
+      required: false
+    }
+  },
   computed: {
     items () {
-      return new Array(100)
+      return new Array(this.itemCount)
         .fill(null)
         .map((_, index) => {
           return {
