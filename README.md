@@ -5,6 +5,11 @@
 npm install
 ```
 
+### Serve production build
+```
+npm run servep
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
