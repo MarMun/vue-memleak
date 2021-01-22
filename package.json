@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "servep": "vue-cli-service build && serve -s dist",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -22,6 +23,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^7.0.0-0"
+    "eslint-plugin-vue": "^7.0.0-0",
+    "serve": "^11.3.2"
   }
 }
