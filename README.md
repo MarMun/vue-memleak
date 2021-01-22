@@ -23,7 +23,9 @@ npm run servep
 6. Issue garbage collection manually (DOM nodes from "Case 3"-view visit 1 still stick, but DOM nodes from visit 2 are GC'ed)
 
 
-Optional: Confirm DOM nodes from "Case 1" and "Case 2" routes are GC'ed as expected (to rule out FooBar.List.vue as mem leak source):
+**Optional:**
+
+Confirm DOM nodes from "Case 1" and "Case 2" routes are GC'ed as expected (to rule out FooBar.List.vue as mem leak source):
 - Navigate to "Case 1|2" and back to "Home"
 - Issue garbage collection manually (DOM nodes from "Case 1|2" are GC'ed)
 
