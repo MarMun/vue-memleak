@@ -1,7 +1,7 @@
 <template>
 
     <div>
-      <h1>Case 3 (mem leak)</h1>
+      <h1>Case 4 (mem leak)</h1>
 
       <p>Add to baseline</p>
 
