@@ -4,6 +4,7 @@ import CaseOne from '../views/case.one.vue'
 import CaseTwo from '../views/case.two.vue'
 import CaseThree from '../views/case.three.vue'
 import CaseFour from '../views/case.four.vue'
+import CaseFourWrapped from '../views/case.four.wrapped.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/casefour',
     name: 'CaseFour',
     component: CaseFour
+  },
+  {
+    path: '/casefourwrapped',
+    name: 'CaseFourWrapped',
+    component: CaseFourWrapped
   }
 ]
 

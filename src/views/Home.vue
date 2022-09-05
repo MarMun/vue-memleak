@@ -13,7 +13,13 @@
     <p><strong>But only on first visit?</strong></p>
 
     <h1>Case 4</h1>
-    <p>Add to baseline</p>
+    <p>Clone of case 3. Adds to baseline</p>
+
+    <h1>Case 4 (wrapped)</h1>
+    <p>Case 4 wrapped in case 2 (non-leaking) layout</p>
+    <p>Leak happens even if only nested component has 'problematic' layout.</p>
+    <p>We can't avoid this at route root component level.</p>
+    <p>(Also tested with case 1 - non-leaking - layout)</p>
 
   </div>
 </template>

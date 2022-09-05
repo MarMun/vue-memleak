@@ -3,9 +3,7 @@
     <div>
       <h1>Case 4 (mem leak)</h1>
 
-      <p>Add to baseline</p>
-
-      <p><strong>But only on first visit?</strong></p>
+      <p>Clone of case 3. Adds to baseline</p>
 
       <FooBarList/>
     </div>
