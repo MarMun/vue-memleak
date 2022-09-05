@@ -14,14 +14,14 @@ export default {
   name: 'FooBarList',
   props: {
     itemCount: {
-      type: Number,
-      default: () => { return 100 },
+      type: String,
+      default: () => { return '100' },
       required: false
     }
   },
   computed: {
     items () {
-      return new Array(this.itemCount)
+      return new Array(Number.parseInt(this.itemCount))
         .fill(null)
         .map((_, index) => {
           return {

@@ -28,7 +28,8 @@ const routes = [
     component: CaseThree
   },
   {
-    path: '/casefour',
+    path: '/casefour/:itemCount?',
+    props: true,
     name: 'CaseFour',
     component: CaseFour
   },

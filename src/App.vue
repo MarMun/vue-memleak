@@ -4,10 +4,12 @@
     <router-link to="/caseone">Case 1</router-link> |
     <router-link to="/casetwo">Case 2</router-link> |
     <router-link to="/casethree">Case 3 (mem leak)</router-link> |
-    <router-link to="/casefour">Case 4 (mem leak)</router-link> |
+    <router-link :to="{ name: 'CaseFour', params: { itemCount: 100 } }">Case 4 (mem leak)</router-link> |
+    <router-link :to="{ name: 'CaseFour', params: { itemCount: 500 } }">Case 4 (mem leak, 500 items)</router-link> |
     <router-link to="/casefourwrapped">Case 4 (wrapped)</router-link>
   </div>
   <router-view/>
+
 </template>
 
 <style>

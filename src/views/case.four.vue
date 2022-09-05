@@ -5,7 +5,7 @@
 
       <p>Clone of case 3. Adds to baseline</p>
 
-      <FooBarList/>
+      <FooBarList :itemCount="$attrs.itemCount"/>
     </div>
 
 </template>
