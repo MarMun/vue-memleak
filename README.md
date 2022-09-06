@@ -29,6 +29,12 @@ Confirm DOM nodes from "Case 1" and "Case 2" routes are GC'ed as expected<br/>(t
 - Navigate to "Case 1|2" and back to "Home"
 - Issue garbage collection manually (DOM nodes from "Case 1|2" are GC'ed)
 
+Confirm DOM nodes of FIRST visit stick (and not from the last visit):
+- `Case 4` has 100 list items
+- `Case 4 (500 items)` has 500 list items
+
+The number of detached / leaked nodes depend on which version of the case 4 view was opened first.
+
 ## Assumption
 
 Components with a single root and multiple children cause memory leak:
@@ -66,6 +72,13 @@ Components with a single root and multiple children cause memory leak:
 
 </template>
 ```
+## How the leak looks like
+
+Each route opened the first time contributes to a new baseline.
+
+(numbers = case view opened / GC'ed)
+<img width="1351" alt="105529843-4cc34b00-5ce7-11eb-853c-98d682b3eb83" src="https://user-images.githubusercontent.com/5682504/188559474-83bf3670-da7b-41ab-a679-f619395c9e70.png">
+
 
 ## Additional scripts
 
